@@ -12,11 +12,12 @@
 
 <body>
     <main class="lg:w-1/2 mx-auto mt-16 text-center">
-        <h1 class="text-5xl font-semibold text-gray-400">
+        <h1 class="text-5xl font-semibold text-gray-600">
             Let's count some <span class="text-green-400">Moooooney</span>
         </h1>
+        <!-- display section -->
         <section class="grid grid-cols-3 gap-10 mt-16">
-            <div class="bg-green-400 text-white p-8 rounded">
+            <div class="bg-indigo-400 text-white p-8 rounded">
                 <h3 class="text-2xl font-semibold">Deposit</h3>
                 <h3 class="text-4xl font-bold">$<span id="deposit-display">100</span></h3>
             </div>
@@ -24,9 +25,24 @@
                 <h3 class="text-2xl font-semibold">Withdraw</h3>
                 <h3 class="text-4xl font-bold">$<span id="withdraw-display">100</span></h3>
             </div>
-            <div class="bg-gray-400 text-white p-8 rounded">
+            <div class="bg-blue-400 text-white p-8 rounded">
                 <h3 class="text-2xl font-semibold">Balance</h3>
                 <h3 class="text-4xl font-bold">$<span id="balance-display">100</span></h3>
+            </div>
+        </section>
+        <!-- deposit-withdraw section -->
+        <section class="grid grid-cols-2 gap-10 my-12">
+            <div class="bg-pink-200 p-8 rounded">
+                <input class="block w-full text-center py-2 rounded" type="text" name="" id="deposit-input"
+                    placeholder="$ amount you want to deposit">
+                <button class="block font-bold bg-gray-600 px-5 py-2 text-white rounded mx-auto mt-4"
+                    id="deposit-button">Deposit</button>
+            </div>
+            <div class="bg-pink-200 p-8 rounded">
+                <input class="block w-full text-center py-2 rounded" type="text" name="" id="withdraw-input"
+                    placeholder="$ amount you want to withdraw">
+                <button class="block font-bold bg-gray-600 px-5 py-2 text-white rounded mx-auto mt-4"
+                    id="withdraw-button">Withdraw</button>
             </div>
         </section>
     </main>
