@@ -1,8 +1,8 @@
 document.getElementById('submit-button').addEventListener('click', function () {
-    tryLogin();
+    performLogin();
 });
 
-function tryLogin() {
+function performLogin() {
     const emailField = document.getElementById('email');
     const passwordField = document.getElementById('password');
 
