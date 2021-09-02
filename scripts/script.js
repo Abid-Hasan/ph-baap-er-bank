@@ -65,10 +65,14 @@ function performBankingTask(task) {
 
 const depositButton = document.getElementById('deposit-button');
 if (depositButton != null) {
-    depositButton.addEventListener('click', performBankingTask('deposit'));
+    depositButton.addEventListener('click', function () {
+        performBankingTask('deposit');
+    });
 }
 
 const withdrawButton = document.getElementById('withdraw-button');
 if (withdrawButton != null) {
-    withdrawButton.addEventListener('click', performBankingTask('withdraw'));
+    withdrawButton.addEventListener('click', function () {
+        performBankingTask('withdraw');
+    });
 }
