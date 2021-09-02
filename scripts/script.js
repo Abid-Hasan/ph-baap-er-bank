@@ -54,7 +54,7 @@ if (withdrawButton != null) {
         const withdrawInput = document.getElementById('withdraw-input');
         const currentWithdraw = parseFloat(withdrawInput.value);
 
-        if ((!isNaN(currentWithdraw)) && (previousBalance > currentWithdraw)) {
+        if ((!isNaN(currentWithdraw)) && (previousBalance >= currentWithdraw)) {
             withdrawDisplay.innerText = previousWithdraw + currentWithdraw;
             balanceDisplay.innerText = previousBalance - currentWithdraw;
             withdrawInput.value = '';
